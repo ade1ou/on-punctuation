@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Page 2</title>
+    <link rel="stylesheet" href="page2.css">
 </head>
 <body>
     <h1>this is page 2</h1>
@@ -11,5 +12,38 @@
     <a href="../index.html"><button>Class Website</button></a>
     <a href="index.html"><button>Previous page</button></a>
     <a href="Page3.html"><button>Next page</button></a>
+    <h3 class="fixed">Click the letters!</h3>
+    <div class="word">
+      <span>.</span>
+      <span>,</span>
+      <span>:</span>
+      <span>;</span>
+      <span>C</span>
+      <span>apitals</span>
+      <span>and</span>
+      <span>sm</span>
+      <span>all</span>
+      <span>l</span>
+      <span>etters</span>
+    </div>
+    <script>
+        // https://www.sliderrevolution.com/resources/css-text-animation/
+        // JavaScript by Florin Pop
+        const spans = document.querySelectorAll('.word span');
+      
+        spans.forEach((span, idx) => {
+          span.addEventListener('click', (e) => {
+            e.target.classList.add('active');
+          });
+          span.addEventListener('animationend', (e) => {
+            e.target.classList.remove('active');
+          });
+      
+          // Initial animation
+          setTimeout(() => {
+            span.classList.add('active');
+          }, 750 * (idx+1))
+        });
+      </script>
 </body>
 </html>
