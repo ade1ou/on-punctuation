@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Page 2</title>
+    <link rel="stylesheet" href="page2.css">
+</head>
+<body>
+<div class="container">
+  <div class="column-container">
+    <h1>So there are the uninteresting things in punctuation</h1>
+    <p>uninteresting in a way that is perfectly obvious, and so we do not have to go any farther into that.</p>
+    <p>There are besides dashes and dots, and these might be interesting spaces might be interesting.</p>
+  </div>
+  <div class="row-container"></div>
+    <div class="word">
+      <span>They</span>
+      <div class="padding-right"></div>
+      <span>might</span>
+    </div>
+    </div>
+    <div class="word">
+      <div class="padding-right"></div>
+      <span>if</span>
+      <div class="padding-right"></div>
+      <span>one</span>
+      <div class="padding-right"></div>
+      <span>felt</span>
+      <div class="padding-right"></div>
+      <span>that</span>
+      <div class="padding-right"></div>
+      <span>way</span>
+      <div class="padding-right"></div>
+      <span>about</span>
+      <div class="padding-right"></div>
+      <span>them</span>
+    </div> 
+    
+</div>
+    <script>
+        // https://www.sliderrevolution.com/resources/css-text-animation/
+        // JavaScript by Florin Pop
+        const spans = document.querySelectorAll('.word span');
+      
+        spans.forEach((span, idx) => {
+          span.addEventListener('click', (e) => {
+            e.target.classList.add('active');
+          });
+          span.addEventListener('animationend', (e) => {
+            e.target.classList.remove('active');
+          });
+      
+          // Initial animation
+          setTimeout(() => {
+            span.classList.add('active');
+          }, 750 * (idx+1))
+        });
+      </script>
+</body>
+<div class="footer">
+  <a href="../index.html"><button>Class Website</button></a>
+  <a href="../Page 1/Page1.html"><button>Previous page</button></a>
+  <a href="../Page 3/Page3.html"><button>Next page</button></a>
+</div>
+</html>
