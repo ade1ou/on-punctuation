@@ -11,6 +11,7 @@ html, body {
 h1 {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 8rem;
+  color: #081538;
 }
 
 
@@ -19,6 +20,7 @@ p {
   font-weight: 300;
   font-style: normal;
   font-size: 2rem;
+  color: #081538;
 }
 
 .p2{
@@ -63,7 +65,23 @@ p {
    margin-right:2vw;
    flex-direction:row;
 }
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
 
+.image-container {
+  position: relative;
+}
+
+.background-image2 {
+  position: absolute;
+  left: 85%;
+  transform: translate(-90%, 100%);
+  z-index: -1;
+}
 .container{
   position:relative;
   width:100vw;
@@ -74,13 +92,11 @@ p {
 .container .section{
   position:sticky;
   top:0;
-  width: calc(100vw - 4vw);
+  /* width: calc(100vw - 4vw); */
   height:100vh;
   /* border: 2px solid purple; */
 }
 .container .section:nth-child(1){
-  background-color:white;
-  background-size:cover;
   margin-left: 2vw;
   text-align: center;
   /* it is evident */
@@ -88,14 +104,15 @@ p {
 .container .section:nth-child(2){
   background-color:white;
   background-size:cover;
-  margin-left: 2vw;
   /* quotation marks */
 }
 .container .section:nth-child(3){
-  background-color:antiquewhite;
+  background-color:white;
   background-size:cover;
   padding-left: 2vw;
   padding-right: 2vw;
+  padding-top:20rem;
+  text-align: center;
 
 }
 .container .section:nth-child(4){
@@ -108,11 +125,13 @@ p {
   /* thereforewherefore */
 }
 .container .section:nth-child(5){
-  background-color:antiquewhite;
+  background-color:white;
   background-size:cover;
   padding-left: 2vw;
   padding-right: 2vw;
   padding-top:1%;
+  padding-top:10rem;
+  text-align: center;
   /* Beside it does not in its form */
 }
 
@@ -126,11 +145,11 @@ p {
 }
 
 .container .section:nth-child(7){
-  background-color:antiquewhite;
+  background-color:white;
   background-size:cover;
   padding-left: 2vw;
   padding-right: 2vw;
-  padding-top:1%;
+  /* padding-top:1%; */
 }
 
 .container .section:nth-child(8){
@@ -138,7 +157,7 @@ p {
   background-size:cover;
   padding-left: 2vw;
   padding-right: 2vw;
-  padding-top:1%;
+  padding-top:5rem;
  
 }
 
