@@ -2,19 +2,18 @@
 @import url("https://use.typekit.net/jpy6bhw.css");
 @import url("https://use.typekit.net/jpy6bhw.css");
 
-
 h1 {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 10rem;
-  }
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 8rem;
+}
 
 
-  p {
-    font-family: "franklin-gothic-urw", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 30pt;
-  }
+p {
+  font-family: "franklin-gothic-urw", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 2rem;
+}
 .container{
   display: flex;
   border:1px solid black;

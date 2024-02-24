@@ -3,17 +3,16 @@
 @import url("https://use.typekit.net/jpy6bhw.css");
 h1 {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 200pt;
+    font-size: 8rem;
   }
   
-
+  
   p {
     font-family: "franklin-gothic-urw", sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 30pt;
+    font-size: 2rem;
   }
-
 
   .container{
     display: flex;

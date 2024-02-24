@@ -2,30 +2,74 @@
 @import url("https://use.typekit.net/jpy6bhw.css");
 @import url("https://use.typekit.net/jpy6bhw.css");
 h1 {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 200pt;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 8rem;
+}
+
+body {
+    height: 100vh;
   }
-  
+p {
+  font-family: "franklin-gothic-urw", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 2rem;
+}
 
-  p {
-    font-family: "franklin-gothic-urw", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 30pt;
-  }
-
-
-  .container{
+.p2{
+  font-family: "franklin-gothic-urw", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.8rem;
+  text-align: justify;
+}
+  .flexcontainer{
     display: flex;
-    margin-left: 3vw;
-    margin-right: 3vw;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    gap: 1.5rem;
+    margin-top: 26vh;
+    /* border: 1px solid black; */
   }
+
+  .svg-container {
+    display: flex;
+    flex-basis: auto;
+    width: 30%;
+    /* border: 1px solid black; */
+}
+
+.text-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+
   .footer {
-    display: flex;
-    justify-content: space-around;
-   border:2px solid red;
+  display: flex;
+  justify-content: space-around;
+   border:2px solid rgb(140, 70, 70);
    margin-left: 2vw;
    margin-right:2vw;
    flex-direction:row;
 }
+
+.section {
+  height: 100vh;
+  display: block;
+  place-items: center;
+}
+.section.stack.red{
+  background-color: white;
+}
+
+.section.stack.blue {
+  background-color: white;
+  display: block;
+}
+

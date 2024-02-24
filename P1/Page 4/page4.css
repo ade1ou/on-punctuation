@@ -3,18 +3,17 @@
 @import url("https://use.typekit.net/jpy6bhw.css");
 
 h1 {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 8rem;
-    color: #151B3C;
-  }
-  
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 8rem;
+}
 
-  p {
-    font-family: "franklin-gothic-urw", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 30pt;
-  }
+
+p {
+  font-family: "franklin-gothic-urw", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 2rem;
+}
 
 .purple{
   color:#926284;
