@@ -8,55 +8,49 @@
 </head>
 <body>
 <div class="container">
-  <div class="column-container">
+  <div class="section">
     <h1>So there are the uninteresting things in punctuation</h1>
+  </div>
+
+<div class="section">
     <p>uninteresting in a way that is perfectly obvious, and so we do not have to go any farther into that.</p>
     <p>There are besides dashes and dots, and these might be interesting spaces might be interesting.</p>
-  </div>
-  <div class="row-container"></div>
-    <div class="word">
-      <span>They</span>
-      <div class="padding-right"></div>
-      <span>might</span>
-    </div>
-    </div>
-    <div class="word">
-      <div class="padding-right"></div>
-      <span>if</span>
-      <div class="padding-right"></div>
-      <span>one</span>
-      <div class="padding-right"></div>
-      <span>felt</span>
-      <div class="padding-right"></div>
-      <span>that</span>
-      <div class="padding-right"></div>
-      <span>way</span>
-      <div class="padding-right"></div>
-      <span>about</span>
-      <div class="padding-right"></div>
-      <span>them</span>
-    </div> 
-    
 </div>
-    <script>
-        // https://www.sliderrevolution.com/resources/css-text-animation/
-        // JavaScript by Florin Pop
-        const spans = document.querySelectorAll('.word span');
-      
-        spans.forEach((span, idx) => {
-          span.addEventListener('click', (e) => {
-            e.target.classList.add('active');
-          });
-          span.addEventListener('animationend', (e) => {
-            e.target.classList.remove('active');
-          });
-      
-          // Initial animation
-          setTimeout(() => {
-            span.classList.add('active');
-          }, 750 * (idx+1))
-        });
-      </script>
+
+<div class="section">
+<h1>They might</h1>
+</div>
+
+<div class="section">
+<p>if</p>
+</div>
+
+<div class="section">
+  <p>one</p>
+  </div>
+
+<div class="section">
+  <p>felt</p>
+</div>
+
+<div class="section">
+  <p>that</p>
+</div>
+
+<div class="section">
+  <p>way</p>
+</div>
+
+<div class="section">
+  <p>about</p>
+</div>
+
+<div class="section">
+  <p>them</p>
+  </div>
+</div>
+
+   
 </body>
 <div class="footer">
   <a href="../index.html"><button>Class Website</button></a>

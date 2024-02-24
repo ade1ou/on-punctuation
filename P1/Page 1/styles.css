@@ -1,14 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url("https://use.typekit.net/jpy6bhw.css");
 @import url("https://use.typekit.net/jpy6bhw.css");
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  /* overflow-x: hidden; */
+}
+
 h1 {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 8rem;
 }
 
-body {
-    height: 100vh;
-  }
+
 p {
   font-family: "franklin-gothic-urw", sans-serif;
   font-weight: 300;
@@ -20,7 +26,7 @@ p {
   font-family: "franklin-gothic-urw", sans-serif;
   font-weight: 300;
   font-style: normal;
-  font-size: 1.8rem;
+  font-size: 1.95rem;
   text-align: justify;
 }
   .flexcontainer{
@@ -30,7 +36,7 @@ p {
     margin-left: 2vw;
     margin-right: 2vw;
     gap: 1.5rem;
-    margin-top: 26vh;
+    padding-top: 24vh;
     /* border: 1px solid black; */
   }
 
@@ -59,17 +65,81 @@ p {
    flex-direction:row;
 }
 
-.section {
-  height: 100vh;
-  display: block;
-  place-items: center;
+.container{
+  position:relative;
+  width:100vw;
+  margin-left: 0;
+  margin-right: 0;
+  /* border: 1px solid red; */
 }
-.section.stack.red{
-  background-color: white;
+.container .section{
+  position:sticky;
+  top:0;
+  width:100vw;
+  height:100vh;
+  /* border: 2px solid white; */
+}
+.container .section:nth-child(1){
+  background-color:white;
+  background-size:cover;
+  margin-left: 2vw;
+  margin-right:2vw;
+  text-align: center;
+  /* it is evident */
+}
+.container .section:nth-child(2){
+  background-color:white;
+  background-size:cover;
+  /* quotation marks */
+}
+.container .section:nth-child(3){
+  background-color:antiquewhite;
+  background-size:cover;
+  padding-left: 2vw;
+  padding-right: 2vw;
+
+}
+.container .section:nth-child(4){
+  background-color:white;
+  background-size:cover;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-top:1%;
+  text-align: center;
+  /* thereforewherefore */
+}
+.container .section:nth-child(5){
+  background-color:antiquewhite;
+  background-size:cover;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-top:1%;
+  /* Beside it does not in its form */
 }
 
-.section.stack.blue {
-  background-color: white;
-  display: block;
+.container .section:nth-child(6){
+  background-color:antiquewhite;
+  background-size:cover;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-top:1%;
+
+}
+
+.container .section:nth-child(7){
+  background-color:antiquewhite;
+  background-size:cover;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-top:1%;
+}
+
+.container .section:nth-child(8){
+  background-color:antiquewhite;
+  background-size:cover;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-top:1%;
+ 
 }
 
