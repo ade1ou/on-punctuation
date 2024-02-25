@@ -9,6 +9,7 @@ html, body {
 h1 {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 8rem;
+    color: #081538;
   }
   
   
@@ -17,17 +18,28 @@ h1 {
     font-weight: 300;
     font-style: normal;
     font-size: 2rem;
+    color: #081538;
+    margin-left: 4vw;
+    margin-right:4vw;
   }
 
-  
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+  }
+
   .footer {
-  display: flex;
-  justify-content: space-around;
-   border:2px solid red;
-   margin-left: 2vw;
-   margin-right:2vw;
-   flex-direction:row;
-}
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+     border:2px solid red;
+     margin-left: 2vw;
+     margin-right:2vw;
+     width:80%;
+  }
 
 .container{
   position:relative;
@@ -41,25 +53,28 @@ h1 {
   top:0;
   width:100vw;
   height:100vh;
-  border: 2px solid white;
 }
 .container .section:nth-child(1){
   background-color:antiquewhite;
   background-size:cover;
+  text-align: center;
+  border:1px solid white;
 }
 .container .section:nth-child(2){
   background-color:white;
   background-size:cover;
+  padding-top: 15rem;
+  text-align: center;
 }
 .container .section:nth-child(3){
-  background-color:antiquewhite;
   background-size:cover;
+  padding-top: 25rem;
+  text-align: center;
 }
 .container .section:nth-child(4){
   background-color:white;
   background-size:cover;
-}
-.container .section:nth-child(5){
-  background-color:antiquewhite;
-  background-size:cover;
+  padding-top: 15rem;
+  text-align: center;
+  height: 100vh;
 }
