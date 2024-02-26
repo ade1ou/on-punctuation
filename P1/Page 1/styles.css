@@ -161,3 +161,15 @@ p {
  
 }
 
+@media (min-width: 768px) {
+  .container .section {
+    padding: 3vw;
+  }
+}
+
+/* Styles for large screens */
+@media (min-width: 1024px) {
+  .container .section {
+    padding: 4vw;
+  }
+}
