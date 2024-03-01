@@ -1,0 +1,251 @@
+.rotate-180-anim {
+    -webkit-animation: rotate180 4s linear infinite;
+            animation: rotate180 4s linear infinite;
+  }
+  
+  @-webkit-keyframes rotate180 {
+    0% {
+      transform: rotate(0deg);
+    }
+    15% {
+      transform: rotate(180deg);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+    65% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  @keyframes rotate180 {
+    0% {
+      transform: rotate(0deg);
+    }
+    15% {
+      transform: rotate(180deg);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+    65% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  .rotate-45-anim {
+    transform: rotate(-45deg);
+    -webkit-animation: rotate45 4s linear infinite;
+            animation: rotate45 4s linear infinite;
+  }
+  
+  @-webkit-keyframes rotate45 {
+    0% {
+      transform: rotate(-45deg);
+    }
+    15% {
+      transform: rotate(45deg);
+    }
+    50% {
+      transform: rotate(45deg);
+    }
+    65% {
+      transform: rotate(-45deg);
+    }
+    100% {
+      transform: rotate(-45deg);
+    }
+  }
+  
+  @keyframes rotate45 {
+    0% {
+      transform: rotate(-45deg);
+    }
+    15% {
+      transform: rotate(45deg);
+    }
+    50% {
+      transform: rotate(45deg);
+    }
+    65% {
+      transform: rotate(-45deg);
+    }
+    100% {
+      transform: rotate(-45deg);
+    }
+  }
+  .bg-anim {
+    -webkit-animation: changebg 2s steps(2, jump-none) infinite;
+            animation: changebg 2s steps(2, jump-none) infinite;
+  }
+  
+  @-webkit-keyframes changebg {
+    from {
+      background-color: #faf8f8;
+    }
+    to {
+      background-color: currentcolor;
+    }
+  }
+  
+  @keyframes changebg {
+    from {
+      background-color: #faf8f8;
+    }
+    to {
+      background-color: currentcolor;
+    }
+  }
+  .white-text-anim {
+    -webkit-animation: changewh 2s steps(2, jump-none) infinite;
+            animation: changewh 2s steps(2, jump-none) infinite;
+  }
+  
+  @-webkit-keyframes changewh {
+    from {
+      color: currentcolor;
+    }
+    to {
+      color: #fff;
+    }
+  }
+  
+  @keyframes changewh {
+    from {
+      color: currentcolor;
+    }
+    to {
+      color: #fff;
+    }
+  }
+  .delay-1 {
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+  }
+  
+  .delay-2 {
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+  }
+  
+  .delay-3 {
+    -webkit-animation-delay: 2.5s;
+            animation-delay: 2.5s;
+  }
+  
+  .anim-reverse {
+    animation-direction: reverse;
+  }
+  
+  .duration-5 {
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+  }
+  
+  .duration-1 {
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+  }
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url("https://use.typekit.net/jpy6bhw.css");
+@import url("https://use.typekit.net/jpy6bhw.css");
+
+h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 8rem;
+  color: #081538;
+}
+
+
+p {
+  font-family: "franklin-gothic-urw", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.3rem;
+  color: #081538;
+}
+
+.p1{
+    font-family: "franklin-gothic-urw", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.3rem;
+    color: white;
+}
+
+    .bg-custom-green {
+    background-color: #99AE86; 
+  }
+
+  .bg-custom-beige {
+    background-color: #E3C7BB; 
+  }
+
+  .bg-custom-red {
+    background-color: #993242; 
+  }
+
+  .bg-custom-purple {
+    background-color: #AA7788; 
+  }
+
+ .bg-custom-blue {
+    background-color: #042A71; 
+  }
+
+  .bg-custom-orange {
+    background-color: #C33F12; 
+  }
+
+  .bg-custom-turqoise {
+    background-color: #B1D7D7; 
+  }
+
+  .bg-custom-sea {
+    background-color: #4791B7; 
+  }
+  .border-custom-blue{
+    border: 0.3rem solid #B1D7D7;
+  }
+
+  .text-custom-blue{
+    color: #B1D7D7;
+  }
+  .border-custom-green{
+    border: 0.3rem solid #99AE86;
+  }
+
+  .fill-custom-blue{
+    fill:#B1D7D7;
+  }
+  .text-custom-green{
+    color:#99AE86
+  }
+  .border-custom-beige{
+    border:0.3rem solid #E3C7BB;
+  }
+
+  .text-custom-beige{
+    color: #E3C7BB;
+  }
+  .border-custom-orange{
+    border: 0.3rem solid #C33F12;
+  }
+
+  .text-custom-orange{
+    color: #C33F12;
+  }
+
+  .text-custom-bluee{
+    color:#081538;
+  }
+
+  .scale-150 {
+    transform: scale(1.05);
+  }

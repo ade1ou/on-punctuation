@@ -2,12 +2,26 @@
 @import url("https://use.typekit.net/jpy6bhw.css");
 @import url("https://use.typekit.net/jpy6bhw.css");
 
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
 h1 {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 8rem;
   color: #081538;
+  text-align: center;
 }
 
+.h1{
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 20rem;
+  color: white;
+  text-align: center;
+  padding-top: 13rem;
+}
 
 p {
   font-family: "franklin-gothic-urw", sans-serif;
@@ -27,96 +41,166 @@ p {
 .container .section{
   position:sticky;
   top:0;
+  left: 0;
   width:100vw;
   height:100vh;
-  /* border: 2px solid white; */
+  /* border: 2px solid red; */
 }
-.container .section:nth-child(1){
-  background-color:white;
-  background-size:cover;
+.container .section .section-wrapper{
+  position: relative;
+  height: 100%;
+  padding: 0 2vw;
+  box-sizing: border-box;
+  /* border: 2px solid red; */
+}
+
+.container .section:nth-child(1) .section-wrapper{
+  background-color: white;
+  background-size: cover;
   margin-left: 2vw;
-  margin-right:2vw;
-  padding-top: 5%;
+  margin-right: 2vw;
   text-align: center;
   /* what had periods to do with it */
 }
-.container .section:nth-child(2){
+.container .section:nth-child(2) .section-wrapper{
   background-color:white;
   background-size:cover;
   padding-left: 2vw;
   padding-right: 2vw;
-  padding-top:37vh;
+  padding-top:3rem;
   text-align: center;
   /* Inevitably no matter how completely */
 }
-.container .section:nth-child(3){
-  background-color:antiquewhite;
-  background-size:cover;
+.container .section:nth-child(3) .section-wrapper{
+  background-color:#A62510;
   padding-left: 2vw;
   padding-right: 2vw;
+  text-align: center;
   /* Stopping */
 }
 
-.container .section:nth-child(4){
+.container .section:nth-child(4) .section-wrapper{
   background-size:cover;
   background-color:white;
-  padding-left: 32vw;
+  padding-left: 2vw;
   padding-right: 2vw;
-  padding-top: 20vh;
+  padding-top: 3rem;
   /* sometime did not really keep one */
 }
 
-.container .section:nth-child(5){
+.container .section:nth-child(5) .section-wrapper{
   background-size:cover;
   background-color:white;
-  padding-left: 43vw;
+  padding-left: 3vw;
   padding-right: 2vw;
   padding-top: 25vh;
   /* Beside that periods might later come to have */
 }
 
-.container .section:nth-child(6){
+.container .section:nth-child(6) .section-wrapper{
   background-size:cover;
   background-color:white;
-  padding-left: 54vw;
+  padding-left: 2 vw;
   padding-right: 2vw;
   padding-top: 30vh;
+  text-align: center;
   /* They could begin to act as  */
 }
 
-.container .section:nth-child(7){
+.container .section:nth-child(7) .section-wrapper{
   background-size:cover;
   background-color:white;
-  padding-left: 65vw;
+  padding-left: 2 vw;
   padding-right: 2vw;
   padding-top: 35vh;
   /* They did not serve you in  */
 }
 
-.container .section:nth-child(8){
+.container .section:nth-child(8) .section-wrapper{
   background-size:cover;
   background-color:white;
-  padding-left: 76vw;
+  padding-left: 2vw;
   padding-right: 2vw;
   padding-top: 40vh;
   /* Periods have a life of their own a necessity */
 }
 
-.container .section:nth-child(9){
+.container .section:nth-child(9) .section-wrapper{
   background-size:cover;
   background-color:white;
-  padding-left: 87vw;
+  padding-left: 2vw;
   padding-right: 2vw;
-  padding-top: 45vh;
+  padding-top: 0.1rem;
   /* You can see what an entirely different  */
 }
 
 
-  .footer {
-    display: flex;
-    justify-content: space-around;
-   border:2px solid red;
+.footer {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+   /* border:2px solid red; */
    margin-left: 2vw;
    margin-right:2vw;
-   flex-direction:row;
+   width:80%;
+   left: 50%; 
+   transform: translateX(-50%); 
+   bottom: 0; 
+}
+
+.padding{
+  padding-top: 12rem;
+}
+
+/* Styles for screens smaller than or equal to 767.98px (typical mobile size) */
+@media (max-width: 767.98px) {
+  .container .section {
+    padding: 1vw;
+  }
+  p {
+    font-size: 1rem;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  .h1{
+    font-size: 4rem;
+  }
+  .background-image{
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+  .footer {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  left: 80vw;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 1vh;
+  }
+}
+
+/* Styles for screens larger than or equal to 768px (typical tablet size) */
+@media (min-width: 768px) {
+  .container .section {
+    padding: 3vw;
+  }
+}
+
+/* Styles for screens larger than or equal to 1024px (typical desktop size) */
+@media (min-width: 1024px) {
+  .container .section {
+    padding: 4vw;
+  }
+  p {
+    font-size: 2.5rem;
+  }
+  h1 {
+    font-size: 10rem;
+  }
 }

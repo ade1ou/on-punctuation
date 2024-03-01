@@ -112,26 +112,7 @@ p {
   top: calc(-8.125rem * 6);
 }
 }
-  @media screen and (max-width: 600px){
-    h1{
-    text-align:center;
-    text-transform: uppercase;
-    font-size: 2.125rem;
-  }
-    
-    .roller{
-    height: 2.6rem; 
-    line-height: 2.125rem;  
-    }
-    
-    #spare-time {
-      font-size: 1rem;
-      letter-spacing: 0.1rem;
-    }
-    
-    .roller #rolltext {  
-    animation: slide-mob 5s infinite;  
-  }
+
     
     @keyframes slide-mob {
     0%{
@@ -147,15 +128,20 @@ p {
       top: -6.375rem;
     }
   }
-  }
+  
 
-  .footer {
-    display: flex;
-    justify-content: space-around;
-   border:2px solid red;
+
+.footer {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+   /* border:2px solid red; */
    margin-left: 2vw;
    margin-right:2vw;
-   flex-direction:row;
+   width:80%;
+   left: 50%; 
+   transform: translateX(-50%); 
+   bottom: 0; 
 }
 
 .container{
@@ -237,4 +223,131 @@ p {
   padding-right: 2vw;
   padding-top:5rem;
  
+}
+
+/* Styles for screens smaller than or equal to 767.98px (typical mobile size) */
+@media (max-width: 767.98px) {
+  .container .section {
+    padding: 1vw;
+  }
+  p {
+    font-size: 1rem;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  .background-image{
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+  .footer {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  left: 80vw;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: -10;
+  }
+  
+  .roller{
+    height: 4.125rem;
+    line-height: 2.2rem;
+    }
+    
+    #spare-time {
+      font-size: 2rem;
+      letter-spacing: 0.1rem;
+    }
+    
+    .roller #rolltext {  
+    animation: slide-mob 5s infinite;  }
+
+    .purple{
+      color:#926284;
+      font-size: 4rem;
+    }
+    
+    .green{
+      color: #24544F;
+      font-size: 4rem;
+    }
+    
+    .auburn{
+      color:#8B3527;
+      font-size: 4rem;
+    }
+    
+    .orange{
+      color:#A84227;
+      font-size: 4rem;
+    }
+  @keyframes slide {
+    0% {
+        top: 10;
+    }
+    8% {
+        top: 0;
+    }
+    16% {
+        top: calc(-5.5rem * 1);
+    }
+    24% {
+        top: calc(-5.5rem * 1);
+    }
+    32% {
+        top: calc(-5.5rem * 2);
+    }
+    40% {
+        top: calc(-5.5rem * 2);
+    }
+    48% {
+        top: calc(-5.5rem * 3);
+    }
+    56% {
+        top: calc(-5.5rem * 3);
+    }
+    64% {
+        top: calc(-5.5rem * 4);
+    }
+    72% {
+      top: calc(-5.5rem * 4);
+  }
+    80% {
+    top: calc(-5.5rem * 5);
+}
+    88% {
+  top: calc(-5.5rem * 5);
+}
+    96% {
+  top: calc(-5.5rem * 6);
+}
+    100% {
+  top: calc(-5.5rem * 6);
+}
+}
+}
+
+/* Styles for screens larger than or equal to 768px (typical tablet size) */
+@media (min-width: 768px) {
+  .container .section {
+    padding: 3vw;
+  }
+}
+
+/* Styles for screens larger than or equal to 1024px (typical desktop size) */
+@media (min-width: 1024px) {
+  .container .section {
+    padding: 4vw;
+  }
+  p {
+    font-size: 2.5rem;
+  }
+  h1 {
+    font-size: 10rem;
+  }
 }
