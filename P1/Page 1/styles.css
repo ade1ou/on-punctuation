@@ -98,6 +98,7 @@ p {
 .container .section:nth-child(1){
   margin-left: 2vw;
   text-align: center;
+  padding-top: 0;
   /* it is evident */
 }
 .container .section:nth-child(2){
