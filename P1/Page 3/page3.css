@@ -43,6 +43,7 @@ h1 {
      transform: translateX(-50%); 
      bottom: 0; 
   }
+
 .container{
   position:relative;
   width:100vw;
@@ -58,9 +59,10 @@ h1 {
 }
 .container .section:nth-child(1){
   background-color:antiquewhite;
-  background-size:cover;
   text-align: center;
-  border:1px solid white;
+  border:0 solid white;
+  margin-top: 0;
+  padding-top:0;
 }
 .container .section:nth-child(2){
   background-color:white;

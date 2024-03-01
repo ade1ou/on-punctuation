@@ -120,7 +120,7 @@ p {
   background-size:cover;
   padding-left: 2vw;
   padding-right: 2vw;
-  padding-top:1%;
+  padding-top:0;
   text-align: center;
   /* thereforewherefore */
 }
@@ -140,7 +140,7 @@ p {
   background-size:cover;
   padding-left: 2vw;
   padding-right: 2vw;
-  padding-top:1%;
+  padding-top:0;
 
 }
 
@@ -149,7 +149,7 @@ p {
   background-size:cover;
   padding-left: 2vw;
   padding-right: 2vw;
-  /* padding-top:1%; */
+  padding-top:1%;
 }
 
 .container .section:nth-child(8){

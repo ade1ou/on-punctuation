@@ -159,6 +159,8 @@ p {
 .container .section:nth-child(1){
   margin-left: 2vw;
   text-align: center;
+  margin-top:0;
+  padding-top:0;
 }
 .container .section:nth-child(2){
   background-color:white;
@@ -166,7 +168,7 @@ p {
   text-align: center;
   margin-left: 2vw;
   margin-right: 2vw;
-  padding-top: 10rem;
+  padding-top: 2rem;
  /* ive had a long and complicated */
 }
 
@@ -204,25 +206,8 @@ p {
   background-size:cover;
   padding-left: 2vw;
   padding-right: 2vw;
-  padding-top:1%;
-
-}
-
-.container .section:nth-child(7){
-  background-color:white;
-  background-size:cover;
-  padding-left: 2vw;
-  padding-right: 2vw;
-  /* padding-top:1%; */
-}
-
-.container .section:nth-child(8){
-  background-color:antiquewhite;
-  background-size:cover;
-  padding-left: 2vw;
-  padding-right: 2vw;
-  padding-top:5rem;
- 
+  padding-top:0;
+  height:150vh;
 }
 
 /* Styles for screens smaller than or equal to 767.98px (typical mobile size) */
