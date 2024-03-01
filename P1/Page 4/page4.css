@@ -2,6 +2,9 @@
 @import url("https://use.typekit.net/jpy6bhw.css");
 @import url("https://use.typekit.net/jpy6bhw.css");
 
+body{
+  margin:0;
+}
 h1 {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 8rem;
@@ -70,7 +73,7 @@ p {
   
   @keyframes slide {
     0% {
-        top: 10;
+        top: 8;
     }
     8% {
         top: 0;
@@ -151,23 +154,26 @@ p {
   margin-right: 0;
   /* border: 1px solid red; */
 }
+
 .container .section{
   position:sticky;
   top:0;
+  margin-left: 0;
+  margin-right: 0;
   height:100vh;
+  /* border: 3px solid red; */
 }
+
 .container .section:nth-child(1){
-  margin-left: 2vw;
   text-align: center;
   margin-top:0;
   padding-top:0;
 }
+
 .container .section:nth-child(2){
-  background-color:white;
-  background-size:cover;
+  background-color:antiquewhite;
+  background-size:100%;
   text-align: center;
-  margin-left: 2vw;
-  margin-right: 2vw;
   padding-top: 2rem;
  /* ive had a long and complicated */
 }
@@ -207,7 +213,7 @@ p {
   padding-left: 2vw;
   padding-right: 2vw;
   padding-top:0;
-  height:150vh;
+  height: 120vh;
 }
 
 /* Styles for screens smaller than or equal to 767.98px (typical mobile size) */

@@ -31,41 +31,34 @@ h1 {
   margin-right: 0;
   /* border: 1px solid red; */
 }
+
 .container .section{
   position:sticky;
   top:0;
-  width:100vw;
+  margin-left: 0;
+  margin-right: 0;
   height:100vh;
-  /* border: 2px solid red; */
+  /* border: 3px solid red; */
 }
 
-.container .section .section-wrapper{
-  position: relative;
-  height: 100%;
-  padding: 0 2vw;
-  box-sizing: border-box;
-  /* border: 2px solid red; */
-}
-
-.container .section:nth-child(1) .section-wrapper{
+.container .section:nth-child(1){
   background-color:white;
   background-size:cover;
-  margin-left: 2vw;
-  margin-right:2vw;
-  padding-top: 5%;
+  padding-top: 0;
   text-align: center;
+  border: 1px solid white;
   /* there are two different */
 }
-.container .section:nth-child(2) .section-wrapper{
+.container .section:nth-child(2){
   background-color:white;
   background-size:cover;
   padding-left: 2vw;
   padding-right: 2vw;
-  padding-top:37vh;
+  padding-top:30vh;
   text-align: center;
   /* you can think of them */
 }
-.container .section:nth-child(3) .section-wrapper{
+.container .section:nth-child(3){
   background-color:antiquewhite;
   background-size:cover;
   padding-left: 2vw;
@@ -74,7 +67,7 @@ h1 {
   /* semi colons and colons */
 }
 
-.container .section:nth-child(4) .section-wrapper{
+.container .section:nth-child(4){
   background-size:cover;
   background-color:white;
   padding-left: 2vw;
@@ -83,25 +76,25 @@ h1 {
   /* i really do not think */
 }
 
-.container .section:nth-child(5) .section-wrapper{
+.container .section:nth-child(5){
   background-size:cover;
   background-color:white;
   padding-left: 2vw;
   padding-right: 2vw;
-  padding-top: 2vh;
+  padding-top: 0vh;
   /* they are more powerful more */
 }
 
-.container .section:nth-child(6) .section-wrapper{
+.container .section:nth-child(6){
   background-size:cover;
-  background-color:white;
+  background-color:antiquewhite;
   padding-left: 2vw;
   padding-right: 2vw;
-  padding-top: 3vh;
+  padding-top: 0vh;
  /* they really have within */
 }
 
-.container .section:nth-child(7) .section-wrapper{
+.container .section:nth-child(7){
   background-size:cover;
   background-color:white;
   padding-left: 2vw;
@@ -111,7 +104,7 @@ h1 {
 /* and now what does a comma */
 }
 
-.container .section:nth-child(8) .section-wrapper{
+.container .section:nth-child(8){
   background-size:cover;
   background-color:white;
   padding-left: 2vw;
@@ -121,14 +114,14 @@ h1 {
   /* what does a comma do */
 }
 
-.container .section:nth-child(9) .section-wrapper{
+.container .section:nth-child(9){
   padding-left: 2vw;
   padding-right: 2vw;
   padding-top: 4vh;
 /* I have refused */
 }
 
-.container .section:nth-child(10) .section-wrapper{
+.container .section:nth-child(10){
   background-size:cover;
   background-color:white;
   padding-left: 2vw;
@@ -137,11 +130,9 @@ h1 {
 /* as i say commas are servile */
 }
 
-.container .section:nth-child(11) .section-wrapper{
+.container .section:nth-child(11){
   background-size:cover;
-  background-color:white;
-  padding-left: 2vw;
-  padding-right: 2vw;
+  background-color: #E3C7BB;
   padding-top: 1vh;
 /* let me tell you */
 }
@@ -149,25 +140,25 @@ h1 {
   height: 200vh;
 }
 
-.container .section:nth-child(12) .section-wrapper{
+.container .section:nth-child(12){
   background-size:cover;
   background-color:white;
   padding-left: 2vw;
   padding-right: 2vw;
-  padding-top: 30vh;
+  padding-top: 10vh;
 /* when i was writing */
 }
 
-.container .section:nth-child(13) .section-wrapper{
+.container .section:nth-child(13){
   background-size:cover;
-  background-color:white;
+  background-color:antiquewhite;
   padding-left: 2vw;
   padding-right: 2vw;
-  padding-top: 4vh;
+  padding-top: 8vh;
 /* complications make eventually */
 }
 
-.container .section:nth-child(14) .section-wrapper{
+.container .section:nth-child(14){
   background-size:cover;
   background-color:white;
   padding-left: 2vw;
@@ -177,16 +168,16 @@ h1 {
 }
 
 
-.container .section:nth-child(15) .section-wrapper{
+.container .section:nth-child(15){
   background-size:cover;
-  background-color:white;
+  background-color:antiquewhite;
   padding-left: 2vw;
   padding-right: 2vw;
   padding-top: 4vh;
 /* do you see now why i feel */
 }
 
-.container .section:nth-child(16) .section-wrapper{
+.container .section:nth-child(16){
   background-size:cover;
   background-color:white;
   padding-left: 2vw;
@@ -195,7 +186,7 @@ h1 {
  /* do you see now why i feel commas */
 }
 
-.container .section:nth-child(17) .section-wrapper{
+.container .section:nth-child(17){
   background-size:cover;
   background-color:white;
   padding-left: 2vw;
@@ -204,24 +195,25 @@ h1 {
 /* think about anything */
 }
 
-.container .section:nth-child(18) .section-wrapper{
+.container .section:nth-child(18){
   background-size:cover;
-  background-color:white;
+  background-color:antiquewhite;
   padding-left: 2vw;
   padding-right: 2vw;
   padding-top: 30vh;
 /* when it gets really difficult */
 }
 
-.container .section:nth-child(19) .section-wrapper{
+.container .section:nth-child(19){
   background-size:cover;
   background-color:white;
   padding-left: 2vw;
   padding-right: 2vw;
+  padding-top: 0;
 /* and what does a comma do */
 }
 
-.container .section:nth-child(20) .section-wrapper{
+.container .section:nth-child(20){
   background-size:cover;
   background-color:white;
   padding-left: 2vw;
@@ -230,7 +222,7 @@ h1 {
   /* a long complicated sentence */
 }
 
-.container .section:nth-child(21) .section-wrapper{
+.container .section:nth-child(21){
   background-size:cover;
   background-color:white;
   padding-left: 2vw;
@@ -239,52 +231,50 @@ h1 {
   /* It is not  */
 }
 
-.container .section:nth-child(22) .section-wrapper{
+.container .section:nth-child(22){
   padding-top: 6rem;
   padding-left:14vw;
   /* like stopping*/
 }
 
-.container .section:nth-child(23) .section-wrapper{
+.container .section:nth-child(23){
   padding-left: 23vw;
   padding-top: 12rem;
   /* has something to do */
 }
-.container .section:nth-child(24) .section-wrapper{
+.container .section:nth-child(24){
   padding-left: 2vw;
   padding-top: 18rem;
   /* with going on, but taking a breath*/
 }
-.container .section:nth-child(25) .section-wrapper{
+.container .section:nth-child(25){
   padding-left: 32vw;
   padding-top: 24rem;
   /* well you are always taking a breath */
 }
-.container .section:nth-child(26) .section-wrapper{
+.container .section:nth-child(26){
   padding-left: 2vw;
   padding-top: 30rem;
   /* and why emphasize one breath. */
 }
-.container .section:nth-child(27) .section-wrapper{
+.container .section:nth-child(27){
   padding-left: 64vw;
   padding-top: 40rem;
   /*rather than another breath. */
 }
-.container .section:nth-child(28) .section-wrapper{
+.container .section:nth-child(28){
   background-size:cover;
-  background-color:white;
-  padding-left: 2vw;
-  padding-right: 2vw;
-  padding-top: 4vh;
+  background-color:antiquewhite;
+  padding-top: 0;
   /* anyway that is the way */
 }
 
-.container .section:nth-child(29) .section-wrapper{
+.container .section:nth-child(29){
   background-size:cover;
   background-color:white;
   padding-left: 2vw;
   padding-right: 2vw;
-  padding-top: 19vh;
+  padding-top: 10vh;
   /* The longer, the more complicated */
 }
 
@@ -305,15 +295,21 @@ h1 {
    bottom: 0; 
 }
 
+mark{
+  color: #4791B7;
+  background-color: transparent;
+  font-weight: 600;
+}
+
 .coolsection{
   font-family: 'Bebas Neue', sans-serif;
   background-color: #E3C7BB;
   text-align: center;
-  width:100vw;
   height:100vh;
   padding:0;
   margin:0;
 }
+
 #text{
   text-align:center;
   position:relative;
@@ -342,6 +338,13 @@ h1 {
   cursor:pointer;
 }
 
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
 
 @media only screen and (max-width: 600px) {
   #back{

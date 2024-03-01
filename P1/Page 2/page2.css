@@ -2,6 +2,9 @@
 @import url("https://use.typekit.net/jpy6bhw.css");
 @import url("https://use.typekit.net/jpy6bhw.css");
 
+body{
+  margin:0;
+}
 h1 {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 8rem;

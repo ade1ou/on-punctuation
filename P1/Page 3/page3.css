@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url("https://use.typekit.net/jpy6bhw.css");
 @import url("https://use.typekit.net/jpy6bhw.css");
-html, body {
+body {
   margin: 0;
   padding: 0;
-  height: 100%;
+  width: 100vw;
 }
+
 h1 {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 8rem;
@@ -54,15 +55,17 @@ h1 {
 .container .section{
   position:sticky;
   top:0;
-  width:100vw;
   height:100vh;
+  margin: 0;
+  /* border: 3px solid blue; */
 }
 .container .section:nth-child(1){
   background-color:antiquewhite;
+  background-size:cover;
   text-align: center;
-  border:0 solid white;
-  margin-top: 0;
-  padding-top:0;
+  padding-top: 0px;
+  margin-top:0;
+   border: 3px solid antiquewhite;
 }
 .container .section:nth-child(2){
   background-color:white;
@@ -78,9 +81,8 @@ h1 {
 .container .section:nth-child(4){
   background-color:white;
   background-size:cover;
-  padding-top: 15rem;
+  padding-top: 10vh;
   text-align: center;
-  height: 100vh;
 }
 
 
@@ -112,6 +114,12 @@ h1 {
   margin-right: 0;
   margin-top: 50vh;
   }
+}
+
+mark{
+  color:#24544F;
+  background-color: transparent;
+  font-weight: 600;
 }
 
 /* Styles for screens larger than or equal to 768px (typical tablet size) */
