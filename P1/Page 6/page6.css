@@ -410,3 +410,7 @@ mark{
     font-size: 10rem;
   }
 }
+
+a {
+  text-decoration: none;
+}

@@ -249,3 +249,9 @@ p {
   .scale-150 {
     transform: scale(1.05);
   }
+
+  .bigbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

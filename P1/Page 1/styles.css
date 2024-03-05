@@ -50,11 +50,10 @@ p {
 }
 
 .text-container {
-    flex: 1;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -101,9 +100,8 @@ p {
 .container .section:nth-child(1){
   margin:0;
   text-align: center;
-  padding-top: 0px;
+  padding-top: 0.5vh;
   height: 100%;
-  border: 1px solid black;
   transform: translateY(-10vh);
   /* it is evident */
 }
@@ -111,7 +109,8 @@ p {
 .container .section:nth-child(2){
   background-color:white;
   background-size:cover;
-  /* quotation marks */
+  padding-top:5vh;
+
 }
 
 .container .section:nth-child(3){
@@ -119,7 +118,7 @@ p {
   background-size:cover;
   padding-left: 2vw;
   padding-right: 2vw;
-  padding-top:20rem;
+  padding-top:36vh;
   text-align: center;
 
 }
@@ -128,7 +127,7 @@ p {
   background-size:cover;
   padding-left: 2vw;
   padding-right: 2vw;
-  padding-top:3vh;
+  padding-top:2vh;
   text-align: center;
   /* thereforewherefore */
 }
@@ -138,7 +137,7 @@ p {
   padding-left: 2vw;
   padding-right: 2vw;
   padding-top:1%;
-  padding-top:10rem;
+  padding-top:30vh;
   text-align: center;
 }
 
@@ -147,8 +146,7 @@ p {
   background-size:cover;
   padding-left: 2vw;
   padding-right: 2vw;
-  padding-top:3vh;
-  /* Beside it does not in its form */
+  padding-top: 0.1vh;
 }
 
 .container .section:nth-child(7){
@@ -159,14 +157,6 @@ p {
   padding-top:1%;
 }
 
-.container .section:nth-child(8){
-  background-color:antiquewhite;
-  background-size:cover;
-  padding-left: 2vw;
-  padding-right: 2vw;
-  padding-top:5rem;
- 
-}
 
 
 .purple{
@@ -200,7 +190,9 @@ mark{
     font-size: 1rem;
   }
   h1 {
+    padding-top: 4rem;
     font-size: 4rem;
+    line-height: 1.2;
   }
 
   .p2 {
@@ -254,4 +246,6 @@ mark{
 }
 
 
-
+a {
+  text-decoration: none;
+}
