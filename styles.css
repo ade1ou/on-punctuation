@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ecd6b5;
+  }
+  p{
+    font-family:'Helvetica', sans-serif;
+    color:#351e10;
+  }
+
+  h1{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 4rem;
+    color:#351e10;
+    text-align: center;
+    transition: color 0.3s ease, font-size 0.3s ease;
+  }
+
+  h1:hover {
+    color: #613613;
+    font-size: 5rem;
+  }
+
+
+  .red-box {
+    background-color: #EBCDA5;
+    height: 100%;
+    width: 600px;
+  }
+  
+  .layout {
+    display: flex;
+    gap: 40px;
+  }
+  
+  .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    background-color: #E3C7BB;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 200px;
+  }
+  
+  .image-container {
+    flex: 1;
+    padding: 16px;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .progress-container {
+    width: 100%;
+    height: 16px;
+    background-color: #EBCDA5;
+  }
+  
+  .progress-bar {
+    width: 0;
+    height: 100%;
+    background-color: #fb8700;
+    transition: width 0.1s linear;
+  }
+  
+  a{
+    text-decoration: none;
+  }
