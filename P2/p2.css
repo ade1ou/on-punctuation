@@ -1,0 +1,142 @@
+@import url("https://use.typekit.net/jpy6bhw.css");
+@font-face {
+    font-family: Workfolk;
+    src: url("P2/wishing for summer.com/Workfolk.otf");
+}
+
+h1{
+    font-family: Workfolk;
+    font-size: 4rem;
+    color:#098870;
+}
+
+h2{
+  font-family: Workfolk;
+    font-size: 2rem;
+    color:#098870;
+    padding-right: 1rem;
+}
+
+h1:hover{
+    color:#D26329;
+}
+
+
+p{
+    font-family: Interstate;
+    font-size: 1rem;
+    color:#098870;
+}
+
+a{
+    font-family: Interstate;
+    font-size: 1rem;
+    color:#098870;
+    text-decoration: none;
+}
+
+a:hover{
+    color:#D26329;
+}
+
+img{
+  min-height: 100px;  
+  min-width: 100px;  
+  width: 50%; 
+height: 50%;
+}
+
+
+.Grid {
+  display: flex;
+  flex-flow: row; 
+  flex-wrap: wrap;
+}
+
+
+.Grid-cell {
+  flex: 1;
+}
+
+.Demo {
+  padding: .8em 1em 0;
+  margin-bottom: 1em;
+  background: #F3F2EC;
+  transition: background-color 0.3s ease;
+  border-radius: 3px;
+  &:after {
+    content: "";
+    display: block;
+    margin-top: .8em;
+    height: 1px;
+   }
+}
+
+.Demo.color {
+    background: #B5D1E5;
+    &:hover {
+    background:#C2DCD1;
+    }
+
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+  }
+
+
+
+.Grid--gutters {
+  margin-left: 1rem;
+  .Grid-cell {
+    padding-left: 1rem;;
+  }
+
+  .Grid--nested {
+    .Grid-cell:first-of-type {
+      .Demo {
+        margin-right: 1rem;
+      }
+    }
+  }  
+}
+
+.navigation {
+  list-style: none;  
+  margin: 0 0 1em;
+  /* border: 1px solid black; */
+  border-radius: 3px;
+  display: flex;
+  background: #C2DCD1;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 2.5rem;
+    a {
+      display: block;
+    }
+  &:hover {
+    background: #B5D1E5;
+  }
+}
+
+
+
+@media all and (max-width: 800px) {
+  .navigation {
+    justify-content: space-around;
+  }
+}
+ 
+@media all and (max-width: 600px) {
+  .navigation {
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    padding: 0;
+    a { 
+      text-align: center; 
+      padding: 10px;
+    } 
+    li:last-of-type a {
+      border-bottom: none;
+    }
+  }   
+}
