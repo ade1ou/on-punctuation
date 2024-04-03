@@ -1,0 +1,63 @@
+@import url("https://use.typekit.net/jpy6bhw.css");
+@font-face {
+    font-family: Workfolk;
+    src: url("P2/wishing for summer.com/Workfolk.otf");
+}
+
+h1{
+    font-family: Workfolk;
+    font-size: 4rem;
+    color:#098870;
+}
+
+h2{
+  font-family: Workfolk;
+    font-size: 2rem;
+    color:#098870;
+    padding-right: 1rem;
+}
+
+h1:hover{
+    color:#D26329;
+}
+
+
+p{
+    font-family: Interstate;
+    font-size: 1rem;
+    color:#098870;
+}
+
+a{
+    font-family: Interstate;
+    font-size: 1rem;
+    color:#098870;
+    text-decoration: none;
+}
+
+a:hover{
+    color:#D26329;
+}
+
+/* Define grid container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+    gap: 20px; /* Gap between grid items */
+  }
+  
+  /* Style individual grid items */
+  .task {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  .task img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center image horizontally */
+  }
+  

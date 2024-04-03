@@ -1,0 +1,43 @@
+body{
+	background-color: #F2E6D0;
+}
+
+button{
+    align-self: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    /* border:solid black 1px; */
+}
+
+img {
+position: absolute;
+display:inline-block;
+height:50%;
+align-self: center;
+}
+
+
+#dude{
+z-index: -100;  
+width:16rem;
+height: auto;
+position: relative;
+/* border:solid blue 1px; */
+align-self: center;
+}
+
+.shirt{
+visibility:hidden;
+ z-index: 2;
+ margin-top: -5%;
+ position: absolute;
+ align-self: center;
+}
+

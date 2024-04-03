@@ -42,24 +42,32 @@ a:hover{
 img{
   min-height: 100px;  
   min-width: 100px;  
-  width: 50%; 
-height: 50%;
 }
 
-
-.Grid {
+.flex-container {
   display: flex;
-  flex-flow: row; 
   flex-wrap: wrap;
+  width: 100%;
 }
 
-
-.Grid-cell {
+.flex-item {
   flex: 1;
+  height: auto;
+  margin-bottom: 1rem;
 }
 
-.Demo {
-  padding: .8em 1em 0;
+.flex-item:nth-child(odd) {
+  background-color: grey; 
+  flex-basis: 30%;
+}
+
+.flex-item:nth-child(even) {
+  background-color: pink; 
+  flex-basis: calc(60% - 1rem); /* Subtracting margin for even items */
+}
+
+
+.color {
   margin-bottom: 1em;
   background: #F3F2EC;
   transition: background-color 0.3s ease;
@@ -70,9 +78,6 @@ height: 50%;
     margin-top: .8em;
     height: 1px;
    }
-}
-
-.Demo.color {
     background: #B5D1E5;
     &:hover {
     background:#C2DCD1;
@@ -82,23 +87,6 @@ height: 50%;
     justify-content: center; 
     align-items: center; 
   }
-
-
-
-.Grid--gutters {
-  margin-left: 1rem;
-  .Grid-cell {
-    padding-left: 1rem;;
-  }
-
-  .Grid--nested {
-    .Grid-cell:first-of-type {
-      .Demo {
-        margin-right: 1rem;
-      }
-    }
-  }  
-}
 
 .navigation {
   list-style: none;  
@@ -118,7 +106,32 @@ height: 50%;
   }
 }
 
+body,
+html { overflow-x: hidden; }
 
+.bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+
+  background-color: #C2DCD1;
+}
+
+.bar_content {
+  display: block; 
+
+  width: 100%;
+  transform: translateX(100%); 
+
+  animation: move 30s linear infinite 
+}
+
+
+@keyframes move {
+  to { transform: translateX(-100%); }
+}
 
 @media all and (max-width: 800px) {
   .navigation {
