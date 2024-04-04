@@ -17,6 +17,12 @@ h2{
     padding-right: 1rem;
 }
 
+.project2{
+  padding-top: 5rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
 h1:hover{
     color:#D26329;
 }
@@ -44,6 +50,10 @@ img{
   min-width: 100px;  
 }
 
+.image{
+  margin-left: 35rem;
+}
+
 .flex-container {
   display: flex;
   flex-wrap: wrap;
@@ -54,15 +64,16 @@ img{
   flex: 1;
   height: auto;
   margin-bottom: 1rem;
+  img {max-width:100%;}
 }
 
 .flex-item:nth-child(odd) {
-  background-color: grey; 
+  background-color: white; 
   flex-basis: 30%;
 }
 
 .flex-item:nth-child(even) {
-  background-color: pink; 
+  background-color: whitesmoke; 
   flex-basis: calc(60% - 1rem); /* Subtracting margin for even items */
 }
 
