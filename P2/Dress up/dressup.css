@@ -3,7 +3,18 @@ body{
 }
 
 button{
+    border: #098870;
+    background-color: none;
+}
+
+.button{
     align-self: center;
+    font-family: Workfolk;
+    font-size: 4rem;
+    color:#098870;
+    text-align: center;
+    text-decoration: none; 
+    cursor: pointer; 
 }
 
 .container{

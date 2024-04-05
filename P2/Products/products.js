@@ -167,7 +167,7 @@ function renderContent() {
         title.textContent = task.title;
   
         taskElement.appendChild(img);
-        taskElement.appendChild(title);
+        // taskElement.appendChild(title);
         toolbox.appendChild(taskElement);
       }
     });

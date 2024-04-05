@@ -4,6 +4,7 @@
     src: url("P2/wishing for summer.com/Workfolk.otf");
 }
 
+
 h1{
     font-family: Workfolk;
     font-size: 4rem;
@@ -42,16 +43,16 @@ a:hover{
 /* Define grid container */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+    grid-template-columns: repeat(4, 1fr); /* Three equal columns */
     gap: 20px; /* Gap between grid items */
   }
   
   /* Style individual grid items */
   .task {
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    /* border: 1px solid #ccc;
+    border-radius: 5px; */
     padding: 10px;
-    background-color: #f9f9f9;
+    /* background-color: #f9f9f9; */
   }
   
   .task img {

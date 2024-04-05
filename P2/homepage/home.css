@@ -1,0 +1,158 @@
+@import url("https://use.typekit.net/jpy6bhw.css");
+@font-face {
+    font-family: Workfolk;
+    src: url("P2/wishing for summer.com/Workfolk.otf");
+}
+
+h1{
+    font-family: Workfolk;
+    font-size: 4rem;
+    color:#098870;
+}
+
+h2{
+  font-family: Workfolk;
+    font-size: 2rem;
+    color:#098870;
+    padding-right: 1rem;
+}
+
+
+h1:hover{
+    color:#D26329;
+}
+
+
+p{
+    font-family: Interstate;
+    font-size: 1rem;
+    color:#098870;
+}
+
+a{
+    font-family: Interstate;
+    font-size: 1rem;
+    color:#098870;
+    text-decoration: none;
+}
+
+a:hover{
+    color:#D26329;
+}
+
+img{
+  min-height: 100px;  
+  min-width: 100px;  
+}
+
+.image{
+  margin-left: 35rem;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.flex-item {
+  flex: 1;
+  height: auto;
+  margin-bottom: 1rem;
+  img {max-width:100%;}
+}
+
+.flex-item:nth-child(odd) {
+  background-color: white; 
+  flex-basis: 30%;
+}
+
+.flex-item:nth-child(even) {
+  background-color: whitesmoke; 
+  flex-basis: calc(60% - 1rem); 
+
+.color {
+  margin-bottom: 1em;
+  background: #F3F2EC;
+  transition: background-color 0.3s ease;
+  border-radius: 3px;
+  &:after {
+    content: "";
+    display: block;
+    margin-top: .8em;
+    height: 1px;
+   }
+    background: #B5D1E5;
+    &:hover {
+    background:#C2DCD1;
+    }
+
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+  }
+
+.navigation {
+  list-style: none;  
+  margin: 0 0 1em;
+  border: 1px solid black; 
+  border-radius: 3px;
+  display: flex;
+  background: #C2DCD1;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 2.5rem;
+    a {
+      display: block;
+    }
+  &:hover {
+    background: #B5D1E5;
+  }
+}
+
+body,
+html { overflow-x: hidden; } 
+
+.bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+
+  background-color: #C2DCD1;
+}
+
+.bar_content {
+  display: block; 
+
+  width: 100%;
+  transform: translateX(100%); 
+
+  animation: move 30s linear infinite 
+}
+
+
+@keyframes move {
+  to { transform: translateX(-100%); }
+}
+
+@media all and (max-width: 800px) {
+  .navigation {
+    justify-content: space-around;
+  }
+}
+ 
+@media all and (max-width: 600px) {
+  .navigation {
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    padding: 0;
+    a { 
+      text-align: center; 
+      padding: 10px;
+    } 
+    li:last-of-type a {
+      border-bottom: none;
+    }
+  }}}
