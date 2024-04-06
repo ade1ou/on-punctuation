@@ -8,6 +8,8 @@ h1{
     font-family: Workfolk;
     font-size: 4rem;
     color:#098870;
+    margin-top: 6rem;
+    text-align: center; 
 }
 
 h2{
@@ -70,6 +72,7 @@ img{
 .flex-item:nth-child(even) {
   background-color: whitesmoke; 
   flex-basis: calc(60% - 1rem); 
+}
 
 .color {
   margin-bottom: 1em;
@@ -95,7 +98,7 @@ img{
 .navigation {
   list-style: none;  
   margin: 0 0 1em;
-  border: 1px solid black; 
+  /* border: 1px solid black;  */
   border-radius: 3px;
   display: flex;
   background: #C2DCD1;
@@ -117,24 +120,26 @@ html { overflow-x: hidden; }
   position: absolute;
   top: 0;
   left: 0;
-
   width: 100%;
-
   background-color: #C2DCD1;
+  overflow: hidden;
 }
 
 .bar_content {
   display: block; 
-
   width: 100%;
-  transform: translateX(100%); 
-
-  animation: move 30s linear infinite 
+  transform: translateX(0%); 
+  animation: move 30s linear infinite;
 }
 
 
 @keyframes move {
-  to { transform: translateX(-100%); }
+  0% {
+    transform: translateX(100%); 
+  }
+  100% {
+    transform: translateX(-100%); 
+  }
 }
 
 @media all and (max-width: 800px) {
@@ -155,4 +160,6 @@ html { overflow-x: hidden; }
     li:last-of-type a {
       border-bottom: none;
     }
-  }}}
+  }}
+
+ 
