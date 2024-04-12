@@ -7,10 +7,35 @@
     src: url("P2/wishing for summer.com/Workfolk.otf");
 }
 
+body{
+  background-color:#F3ECE2 ;
+}
+
+a{
+  display: block;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+.content {
+  position: absolute;
+  top: 30vh;
+  left: 0;
+  width: 100%;
+  height: 100vh; 
+  object-fit: cover;
+  z-index: 0;
+}
+
 h1{
     font-family: Workfolk;
     font-size: 4rem;
     color:#098870;
+    z-index: 1;
+}
+
+h1:hover{
+  color:#D26329;
+  z-index: 1;
 }
 
 h2{
@@ -26,9 +51,7 @@ h2{
   justify-content: center;
   display: flex;
 }
-h1:hover{
-    color:#D26329;
-}
+
 
 .gridBlock {
   opacity: 0;
