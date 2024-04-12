@@ -100,4 +100,10 @@ a:hover{
   img:focus {
     transform: rotate(360deg) scale(1); /* Rotate by 360 degrees and maintain 1:1 scale on tap */
   }
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr); /* Change to two equal columns on smaller screens */
+    padding-left: 1rem; /* Adjust padding for better spacing */
+    padding-right: 1rem;
+    gap: 10px; /* Reduce the gap between grid items */
+  }
 }

@@ -273,7 +273,6 @@ const tasks = [
 
 
 
-
 // Function to create and append image elements to the toolbox
 function createImageElement(task) {
     const taskElement = document.createElement('div');
@@ -283,7 +282,7 @@ function createImageElement(task) {
     img.src = task.img;
     img.alt = task.title;
 
-    // Apply hover effect
+    //  hover effect
     img.addEventListener('mouseover', function() {
         img.src = task.hoverImg;
     });
