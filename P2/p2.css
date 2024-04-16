@@ -69,6 +69,20 @@ h2{
   position: absolute;
   
 }
+
+audio {
+  appearance: none;
+}
+
+
+audio::-webkit-media-controls-play-button {
+  background-color: #098870;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+
 @media only screen and (max-width: 580px) {
   .grid {
     margin: 0;
@@ -288,3 +302,27 @@ h1, h2, p, li {
   color:#D26329;
 }
 
+@media only screen and (max-width: 768px) {
+  .header-section {
+    font-size: 3rem;
+    margin: 20vh auto 100vh;
+  }
+
+  .link-button {
+    font-size: 2rem;
+  }
+
+  .grid-container {
+    height: auto;
+  }
+
+  .grid {
+    width: 90vw;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .gridLayer:nth-child(5) .gridBlock {
+    top: 10vh;
+  }
+}
