@@ -1,4 +1,5 @@
-$(document).ready(function(){
+
+    $(document).ready(function(){
 
     function ImageSwitcher(choices, i) {
         i = 0;

@@ -31,6 +31,17 @@ h2{
     text-align: center;
 }
 
+h3{
+  padding-top: 3rem;
+  font-family: Workfolk;
+    font-size: 1.6rem;
+    color:#098870;
+    text-align: center;
+}
+
+h3:hover{
+  color:#D26329;
+}
 h1:hover{
     color:#D26329;
 }
@@ -124,6 +135,59 @@ a:hover{
     transform: rotate(360deg) scale(1.1);
   
 }
+
+
+.custom-checkbox.pineapples::after {
+  content: url('../Home Images test/SVG/pineapple.svg'); 
+  width: 0.9rem; 
+  height: 0.9rem; 
+  vertical-align: middle;
+}
+
+.custom-checkbox.huladancers::after {
+  content: url('../Home Images test/SVG/hula1.2.svg'); 
+  width: 0.9rem; 
+  height: 0.9rem; 
+  vertical-align: middle;
+}
+/* 
+.blue {
+  color: #B5D1E5; 
+}
+
+.green {
+  color: #C6CBB1;
+}
+
+
+.pink {
+  color: #EFB0A1; 
+}
+
+.purple {
+  color: green; 
+}
+
+.yellow {
+  color: #FFDF00; 
+}
+
+.orange {
+  color: #FAC898; 
+}
+
+.black {
+  color: #3E353A; 
+}
+
+.white {
+  color: white; 
+}
+
+.red {
+  color: #C23B22; 
+} */
+
 
 @media screen and (max-width: 767px) {
   h1{

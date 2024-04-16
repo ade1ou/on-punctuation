@@ -20,6 +20,7 @@ a {
     padding-bottom: 3rem;
 }
 
+
 a:hover {
     color: #D26329;
     text-decoration: none;
@@ -55,19 +56,44 @@ img {
     align-self: center;
 }
 
-/* #dude {
+
+
+#left-image {
+    position: absolute;
+    top: 10%;
+    transform: translateY(-50%);
+    width: 30%;
+    height: auto;
+    left: 0;
+}
+
+#right-image {
+    position: absolute;
+    top: 80%;
+    transform: translateY(-50%);
+    width: 30%;
+    height: auto;
+    right: 0;
+}
+
+
+#dude {
     z-index: -100;
-    width: 16rem;
+    width: 100vw;
     height: auto;
     position: relative;
     align-self: center;
-} */
+    padding-bottom: 0;
+}
 
 .shirt {
     visibility: hidden;
     z-index: 2;
     position: absolute;
     align-self: center;
+    width: 10%;
+    height: auto;
+    padding-bottom:8%;
 }
 
 @media screen and (max-width: 767px) {

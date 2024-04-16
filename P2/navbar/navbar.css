@@ -1,0 +1,101 @@
+
+@import url("https://use.typekit.net/jpy6bhw.css");
+@font-face {
+    font-family: Workfolk;
+    src: url("P2/wishing for summer.com/Workfolk.otf");
+}
+h1{
+    font-family: Workfolk;
+    font-size: 4rem;
+    color:#098870;
+    margin-top: 6rem;
+    text-align: center; 
+}
+.header {
+  display: grid;
+  grid-template-columns: 0.2fr auto 0.2fr; 
+  align-items: center;
+  height: 12rem;
+  max-height: 12rem; 
+  width: 60vw;
+  margin: 0 auto;
+  /* border: solid red 1px; */
+}
+
+.logo {
+  max-width: 8rem; 
+  height: 50%; 
+}
+
+.navigation {
+  list-style: none;  
+  margin: 0 0 1em;
+  border-radius: 3px;
+  display: flex;
+  /* background: #C2DCD1; */
+  justify-content: space-around;
+  align-items: center;
+  min-height: 2.3rem;
+    a {
+      display: block;
+    }
+}
+a{
+    font-family: Interstate;
+    font-size: 1rem;
+    color:#098870;
+    text-decoration: none;
+}
+
+a:hover{
+    color:#D26329;
+}
+
+@media all and (max-width: 800px) {
+  .navigation {
+    justify-content: space-around;
+  }
+
+  h1{
+    font-size: 2rem;
+  }
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr); 
+    margin: 0;
+  }
+  
+  .grid-item2{
+    align-self: end;
+    margin:0;
+  }
+  
+  .grid-item3{
+    align-self: end;
+    margin:0;
+  }
+
+h2{
+  font-family: Workfolk;
+  font-size: 2rem;
+  color:#098870;
+  padding-right:0;
+  padding-left: 1rem;
+}
+
+
+p{
+    font-family: Interstate;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    color:#098870;
+    padding-right:0;
+    padding-left: 1rem;
+}
+
+a{
+    font-family: Interstate;
+    font-size: 1rem;
+    color:#098870;
+    text-decoration: none;
+}
+}

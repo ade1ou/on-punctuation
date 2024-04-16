@@ -8,36 +8,53 @@
 </head>
 <body>
   <div class="background"></div>
-<h1>Your cart is feeling lonely, <br>introduce it to some new friends.</h1>
+  <div id="navbar-container"></div>
+<h3>Your cart is feeling lonely, introduce it to some new friends.</h3>
     <div id="toolbox" class="grid-container">
         <!-- Images will be dynamically added here -->
       </div>
-      
+
       <!-- Checkboxes for filtering -->
       <div id="filter-options" class="filter-options">
         <div class="checkbox-list">
-        <label class="custom-checkbox"><input type="checkbox" value="Blue"> Blue</label>
-        <label class="custom-checkbox"><input type="checkbox" value="Green">Green</label>
-        <label class="custom-checkbox"><input type="checkbox" value="Pink">Pink</label>
-        <label class="custom-checkbox"><input type="checkbox" value="Purple">Purple</label>
-        <label class="custom-checkbox"><input type="checkbox" value="Yellow"> Yellow</label>
-        <label class="custom-checkbox"><input type="checkbox" value="Orange">Orange</label>
-        <label class="custom-checkbox"><input type="checkbox" value="Black"> Black</label>
-        <label class="custom-checkbox"><input type="checkbox" value="White"> White</label>
-        <label class="custom-checkbox"><input type="checkbox" value="Red"> Red</label>
-        <label class="custom-checkbox"><input type="checkbox" value="Flowers"> Flowers</label>
-        <label class="custom-checkbox"><input type="checkbox" value="Surfers"> Surfers</label>
-        <label class="custom-checkbox"><input type="checkbox" value="Beaches"> Beaches</label>
-        <label class="custom-checkbox"><input type="checkbox" value="HulaDancers"> Hula Dancers</label>
-        <label class="custom-checkbox"><input type="checkbox" value="Ukuleles"> Ukuleles</label>
-        <label class="custom-checkbox"><input type="checkbox" value="Cars">Cars</label>
-        <label class="custom-checkbox"><input type="checkbox" value="PalmTrees">Palm trees</label>
-        <label class="custom-checkbox"><input type="checkbox" value="Fish">Fish</label>
-        <label class="custom-checkbox"><input type="checkbox" value="Pineapples">Pineapples</label>
+        <label class="custom-checkbox blue"><input type="checkbox" value="Blue"> Blue</label>
+        <label class="custom-checkbox green"><input type="checkbox" value="Green">Green</label>
+        <label class="custom-checkbox pink"><input type="checkbox" value="Pink">Pink</label>
+        <label class="custom-checkbox purple"><input type="checkbox" value="Purple">Purple</label>
+        <label class="custom-checkbox yellow"><input type="checkbox" value="Yellow"> Yellow</label>
+        <label class="custom-checkbox orange"><input type="checkbox" value="Orange">Orange</label>
+        <label class="custom-checkbox black"><input type="checkbox" value="Black"> Black</label>
+        <label class="custom-checkbox white"><input type="checkbox" value="White"> White</label>
+        <label class="custom-checkbox red"><input type="checkbox" value="Red"> Red</label>
+        <label class="custom-checkbox flowers"><input type="checkbox" value="Flowers"> Flowers</label>
+        <label class="custom-checkbox surfers"><input type="checkbox" value="Surfers"> Surfers</label>
+        <label class="custom-checkbox beaches"><input type="checkbox" value="Beaches"> Beaches</label>
+        <label class="custom-checkbox huladancers"><input type="checkbox" value="HulaDancers"> Hula Dancers</label>
+        <label class="custom-checkbox ukuleles"><input type="checkbox" value="Ukuleles"> Ukuleles</label>
+        <label class="custom-checkbox cars"><input type="checkbox" value="Cars">Cars</label>
+        <label class="custom-checkbox palmtrees"><input type="checkbox" value="PalmTrees">Palm trees</label>
+        <label class="custom-checkbox fish"><input type="checkbox" value="Fish">Fish</label>
+        <label class="custom-checkbox pineapples"><input type="checkbox" value="Pineapples">Pineapples</label>
       </div>
     </div>
 
     <a href="../homepage/home.html"><h2>Back to the beach</h2></a>
+    <script>
+      fetch('../navbar/navbar.html')
+          .then(response => response.text())
+          .then(data => {
+      
+              document.getElementById('navbar-container').innerHTML = data;
+              
+      
+              const head = document.querySelector('head');
+              const link = document.createElement('link');
+              link.rel = 'stylesheet';
+              link.href = '../navbar/navbar.css'; 
+              head.appendChild(link);
+          })
+          .catch(error => console.error('Error fetching navbar:', error));
+      </script>
     </body>
       <script src="products.js"></script>     
 </body>
