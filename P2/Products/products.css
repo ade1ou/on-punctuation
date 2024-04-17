@@ -137,7 +137,7 @@ a:hover{
 }
 
 
-.custom-checkbox.pineapples::after {
+/* .custom-checkbox.pineapples::after {
   content: url('../Home Images test/SVG/pineapple.svg'); 
   width: 0.9rem; 
   height: 0.9rem; 
@@ -149,7 +149,7 @@ a:hover{
   width: 0.9rem; 
   height: 0.9rem; 
   vertical-align: middle;
-}
+} */
 /* 
 .blue {
   color: #B5D1E5; 
