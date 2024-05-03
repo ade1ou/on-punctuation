@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music timer</title>
     <link rel="stylesheet" href="music.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.2/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.2/addons/p5.sound.min.js"></script>
+    <script defer src="script.js"></script>
+    <script defer src="music.js"></script>
+
 </head>
 <body>
 How many songs will it take?
@@ -12,19 +18,129 @@ How many songs will it take?
       <li>
         <button class="toggle-btn">LAZY BUT STINKY</button>
         <div class="item-content item-hidden">
-          More text for item 1...
+          <div class="wrapper">
+            <div class="left-canvas">
+              <div class="canvas-container"></div>
+            </div>
+            <div class="center" id="rap">
+              <div class="player">
+                <div class="details">
+                    <div class="track-art"></div>
+                    <div class="track-name">Track Name</div>
+                    <div class="track-artist">Track Artist</div>
+                </div>
+     
+                <div class="slider_container">
+                    <div class="current-time">00:00</div>
+                     <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+                     <div class="total-duration">00:00</div>
+                </div>
+     
+     
+                <div class="buttons">
+                    <div class="random-track" onclick="randomTrack()">
+                        <i class="fas fa-random fa-2x" title="random"></i>
+                    </div>
+                    <div class="prev-track" onclick="prevTrack()">
+                         <i class="fa fa-step-backward fa-2x"></i>
+                     </div>
+                     <div class="playpause-track" onclick="playpauseTrack()">
+                         <i class="fa fa-play-circle fa-5x"></i>
+                     </div>
+                     <div class="next-track" onclick="nextTrack()">
+                         <i class="fa fa-step-forward fa-2x"></i>
+                     </div>
+                     <div class="repeat-track" onclick="repeatTrack()">
+                         <i class="fa fa-repeat fa-2x" title="repeat"></i>
+                     </div>
+                </div>
+     
+                 <div id="wave">
+                     <span class="stroke"></span>
+                     <span class="stroke"></span>
+                     <span class="stroke"></span>
+                     <span class="stroke"></span>
+                     <span class="stroke"></span>
+                     <span class="stroke"></span>
+                     <span class="stroke"></span>
+                 </div>  
+        </div>
+            </div>
+            <div class="right-canvas">
+              <div class="canvas-container"></div>
+            </div>
+          </div>
         </div>
       </li>
       <li>
         <button class="toggle-btn">JUST ONE MORE KILOMETER</button>
         <div class="item-content item-hidden">
-          More text for item 2...
+          <div class="wrapper">
+            <div class="left-canvas">
+              <div class="canvas-container"></div>
+            </div>
+            <div class="center" id="pop">
+              <div class="player">
+                <div class="details">
+                    <div class="track-art"></div>
+                    <div class="track-name">Track Name</div>
+                    <div class="track-artist">Track Artist</div>
+                </div>
+     
+                <div class="slider_container">
+                    <div class="current-time">00:00</div>
+                     <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+                     <div class="total-duration">00:00</div>
+                </div>
+     
+     
+                <div class="buttons">
+                    <div class="random-track" onclick="randomTrack()">
+                        <i class="fas fa-random fa-2x" title="random"></i>
+                    </div>
+                    <div class="prev-track" onclick="prevTrack()">
+                         <i class="fa fa-step-backward fa-2x"></i>
+                     </div>
+                     <div class="playpause-track" onclick="playpauseTrack()">
+                         <i class="fa fa-play-circle fa-5x"></i>
+                     </div>
+                     <div class="next-track" onclick="nextTrack()">
+                         <i class="fa fa-step-forward fa-2x"></i>
+                     </div>
+                     <div class="repeat-track" onclick="repeatTrack()">
+                         <i class="fa fa-repeat fa-2x" title="repeat"></i>
+                     </div>
+                </div>
+     
+                 <div id="wave">
+                     <span class="stroke"></span>
+                     <span class="stroke"></span>
+                     <span class="stroke"></span>
+                     <span class="stroke"></span>
+                     <span class="stroke"></span>
+                     <span class="stroke"></span>
+                     <span class="stroke"></span>
+                 </div>  
+        </div>
+            </div>
+            <div class="right-canvas">
+              <div class="canvas-container"></div>
+            </div>
+          </div>
         </div>
       </li>
       <li>
         <button class="toggle-btn">COOKING AN EGG</button>
         <div class="item-content item-hidden">
-          More text for item 2...
+          <div class="wrapper">
+            <div class="left-canvas">
+              <div class="canvas-container"></div>
+            </div>
+            <div class="center"></div>
+            <div class="right-canvas">
+              <div class="canvas-container"></div>
+            </div>
+          </div>
         </div>
       </li>
       <li>
@@ -88,7 +204,5 @@ How many songs will it take?
         </div>
       </li>
     </ul>
-
-    <script src="music.js"></script>
 </body>
 </html>

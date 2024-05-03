@@ -37,3 +37,25 @@ font-family: "Jost", sans-serif;
   .item-hidden {
     display: none;
   }
+
+  .canvas-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px; /* Adjust the height of the canvas container */
+  }
+
+  .wrapper {
+    display: flex;
+  }
+  
+  .left-canvas,
+  .right-canvas {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .center {
+    flex: 1;
+  }
