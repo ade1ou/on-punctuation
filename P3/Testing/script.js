@@ -9,7 +9,6 @@ let prev_btn = document.querySelector('.prev-track');
 let seek_slider = document.querySelector('.seek_slider');
 let curr_time = document.querySelector('.current-time');
 let total_duration = document.querySelector('.total-duration');
-let wave = document.getElementById('wave');
 let randomIcon = document.querySelector('.fa-random');
 let curr_track = document.createElement('audio');
 
@@ -20,29 +19,23 @@ let updateTimer;
 
 const music_list = [
     {
-        img : 'images/band.png',
-        name : 'Bande Organise',
-        artist : 'Naps',
-        music : '12min rap/bande organise.mp3'
+        img : 'images/bossa/chegajoao.jpeg',
+        name : 'Chega de saudade',
+        artist : 'João Gilberto',
+        music : '12min bossa/chega.mp3'
     },
     {
-        img : 'images/bogflo.jpeg',
-        name : 'Papa',
-        artist : 'Bigflo et Oli',
-        music : '12min rap/papa.m4a'
+        img : 'images/bossa/ipanema.jpeg',
+        name : 'The Girl from Ipanema',
+        artist : 'Astrud Gilberto, João Gilberto and Stan Getz',
+        music : '12min bossa/girl from ipanema.mp3'
     },
     {
-        img : 'images/naps.jpeg',
-        name : 'En détente',
-        artist : 'Naps',
-        music : '12min rap/En détente.mp3'
+        img : 'images/bossa/aguas.jpeg',
+        name : 'Águas De Março',
+        artist : 'Antonio Carlos Jobim & Elis Regina',
+        music : '12min bossa/aguas de marco.mp3'
     },
-    {
-        img : 'images/favela.png',
-        name : 'Favela',
-        artist : 'Naps ft Scoolking',
-        music : '12min rap/Favela.mp3'
-    }
 ];
 
 loadTrack(track_index);
@@ -69,49 +62,15 @@ function loadTrack(track_index){
     updateTimer = setInterval(setUpdate, 1000);
 
     curr_track.addEventListener('ended', nextTrack);
-    random_bg_color();
 }
 
-function random_bg_color(){
-    document.body.style.background = "white";
-    let a;
 
-    function populate(a){
-        for(let i=0; i<6; i++){
-            let x = Math.round(Math.random() * 14);
-            let y = hex[x];
-            a += y;
-        }
-        return a;
-    }
-    let Color1 = populate('#');
-    let Color2 = populate('#');
-    var angle = 'to right';
-
-    let gradient = 'linear-gradient(' + angle + ',' + Color1 + ', ' + Color2 + ")";
-    document.body.style.background = gradient;
-}
 function reset(){
     curr_time.textContent = "00:00";
     total_duration.textContent = "00:00";
     seek_slider.value = 0;
 }
-function randomTrack(){
-    isRandom ? pauseRandom() : playRandom();
-}
-function playRandom(){
-    isRandom = true;
-    randomIcon.classList.add('randomActive');
-}
-function pauseRandom(){
-    isRandom = false;
-    randomIcon.classList.remove('randomActive');
-}
-function repeatTrack(){
-    let current_index = track_index;
-    loadTrack(current_index);
-    playTrack();
-}
+
 function playpauseTrack(){
     isPlaying ? pauseTrack() : playTrack();
 }
@@ -119,14 +78,12 @@ function playTrack(){
     curr_track.play();
     isPlaying = true;
     track_art.classList.add('rotate');
-    wave.classList.add('loader');
     playpause_btn.innerHTML = '<i class="fa fa-pause-circle fa-5x"></i>';
 }
 function pauseTrack(){
     curr_track.pause();
     isPlaying = false;
     track_art.classList.remove('rotate');
-    wave.classList.remove('loader');
     playpause_btn.innerHTML = '<i class="fa fa-play-circle fa-5x"></i>';
 }
 function nextTrack(){

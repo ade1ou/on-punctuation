@@ -9,6 +9,12 @@ font-family: "Jost", sans-serif;
   padding: 0;
 }
 
+h1{
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-size: 4rem;
+  font-weight: normal;
+}
   
   #items-list {
     list-style-type: none;
@@ -42,7 +48,7 @@ font-family: "Jost", sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 300px; /* Adjust the height of the canvas container */
+    height: 30rem; 
   }
 
   .wrapper {
