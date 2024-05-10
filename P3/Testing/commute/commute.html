@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Break</title>
+    <link rel="stylesheet" href="/Testing/study break/studybreak.css">
+    <script src="commute.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+</head>
+<body>
+    <div class="progress-bar-container">
+        <div class="progress-bar" id="progress-bar"></div>
+        <span id="countdown-timer"></span>
+      </div>
+      <div class="svg-container">
+        <a href="/music.html" class="svg-link">
+            <?xml version="1.0" encoding="utf-8"?>
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 673 673" style="enable-background:new 0 0 673 673;" xml:space="preserve">
+            <path d="M332.8,198.4c-71.7,0-129.8,58.2-129.8,129.8s58.1,129.7,129.8,129.7s129.7-58.1,129.7-129.7S404.5,198.4,332.8,198.4z
+                 M332.8,449.4c-67,0-121.3-54.3-121.3-121.3s54.3-121.3,121.3-121.3S454,261.2,454,328.2S399.8,449.4,332.8,449.4z"/>
+            <path d="M382.1,285.9h-60.8v12.3h60.8V285.9z"/>
+            <path d="M296.5,305.1c7.2,0,13.1-5.9,13.1-13.1s-5.9-13.1-13.1-13.1c-7.2,0-13.1,5.9-13.1,13.1S289.3,305.1,296.5,305.1z"/>
+            <path d="M296.5,341.2c7.2,0,13.1-5.8,13.1-13.1s-5.9-13-13.1-13c-7.2,0-13.1,5.9-13.1,13S289.3,341.2,296.5,341.2z"/>
+            <path d="M296.5,377.4c7.2,0,13.1-5.8,13.1-13.1s-5.9-13.1-13.1-13.1c-7.2,0-13.1,5.9-13.1,13.1S289.3,377.4,296.5,377.4z"/>
+            <path d="M382.1,322h-60.8v12.2h60.8V322z"/>
+            <path d="M382.1,358.2h-60.8v12.2h60.8V358.2z"/>
+            </svg>
+        </a>
+    </div>
+<div class="player">
+      <div class="details">
+                    <div class="track-art"></div>
+                    <div class="track-name">Track Name</div>
+                    <div class="track-artist">Track Artist</div>
+                </div>
+     
+                <div class="slider_container">
+                    <div class="current-time">00:00</div>
+                     <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+                     <div class="total-duration">00:00</div>
+                </div>
+     
+     
+                <div class="buttons">
+                    <div class="prev-track" onclick="prevTrack()">
+                         <i class="fa fa-step-backward fa-2x"></i>
+                     </div>
+                     <div class="playpause-track" onclick="playpauseTrack()">
+                         <i class="fa fa-play-circle fa-5x"></i>
+                     </div>
+                     <div class="next-track" onclick="nextTrack()">
+                         <i class="fa fa-step-forward fa-2x"></i>
+                     </div>
+                </div>
+                <div id="wave">
+                    <span class="stroke"></span>
+                    <span class="stroke"></span>
+                    <span class="stroke"></span>
+                    <span class="stroke"></span>
+                    <span class="stroke"></span>
+                    <span class="stroke"></span>
+                    <span class="stroke"></span>
+                </div>  
+        </div>
+</body>
+</html>

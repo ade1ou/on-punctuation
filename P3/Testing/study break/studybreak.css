@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Jost", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 1rem;
+    }
+    
+.player{
+      height: 95vh;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: -6rem;
+  }
+
+    .details {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    }
+    
+    .track-art {
+    margin: 25px;
+    height: 250px;
+    width: 250px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    -moz-box-shadow: 0px 6px 5px black;
+    -webkit-box-shadow: 0px 6px 5px black;
+    box-shadow: 0px 6px 5px black;
+    -moz-border-radius:190px;
+    -webkit-border-radius:190px;
+    border-radius:190px;
+    }
+    
+    .now-playing {
+    font-size: 1rem;
+    }
+    
+    .track-name {
+    font-size: 2.5rem;
+    }
+    
+    .track-artist {
+    margin-top: 5px;
+    font-size: 1.5rem;
+    }
+    
+    .buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 30px;
+    }
+    .active{
+        color: black;
+    }
+    
+
+    .playpause-track,
+    .prev-track,
+    .next-track {
+    padding: 25px;
+    opacity: 0.8;
+    transition: opacity .2s;
+    }
+    
+
+    .playpause-track:hover,
+    .prev-track:hover,
+    .next-track:hover {
+    opacity: 1.0;
+    }
+    
+    .slider_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .seek_slider{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 5px;
+    background: #A7141E;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    }
+    
+    .seek_slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: white;
+    border: 3px solid #A7141E;
+    cursor: grab;
+    border-radius: 100%;
+    }
+    
+    .seek_slider:hover{
+    opacity: 1.0;
+    }
+    
+    .seek_slider {
+    width: 60%;
+    }
+    
+    
+    .current-time,
+    .total-duration {
+    padding: 10px;
+    }
+    
+    
+    i,
+    i.fa-play-circle,
+    i.fa-pause-circle,
+    i.fa-step-forward,
+    i.fa-step-backward,
+    p {
+    cursor: pointer;
+    }
+    .randomActive{
+        color: black;
+    }
+    .rotate {
+        animation: rotation 8s infinite linear;
+    }
+    @keyframes rotation {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(359deg);
+        }
+    }
+
+/* .wrapper {
+      display: flex;
+      height: 100vh;
+      border: 2px solid black;
+  }
+  
+  .left-canvas,
+  .right-canvas,
+  .center {
+      flex: 1;
+      border: 2px solid red;
+  }
+  
+  
+  .left-canvas,
+  .right-canvas {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  } */
+
+  .loader {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .loader .stroke{
+      /* background: #f1f1f1; */
+      height: 150%;
+      width: 10px;
+      border-radius: 50px;
+      margin: 0 5px;
+      animation: animate 1.4s linear infinite;
+  }
+    @keyframes animate {
+      50% {
+        height: 20%;
+        background: #A7141E;
+      }
+  
+      100% {
+        background: #A7141E;
+        height: 100%;
+      }
+    }
+    .stroke:nth-child(1){
+        animation-delay: 0s;
+    }
+    .stroke:nth-child(2){
+      animation-delay: 0.3s;
+  }
+  .stroke:nth-child(3){
+      animation-delay: 0.6s;
+  }
+  .stroke:nth-child(4){
+      animation-delay: 0.9s;
+  }
+  .stroke:nth-child(5){
+      animation-delay: 0.6s;
+  }
+  .stroke:nth-child(6){
+      animation-delay: 0.3s;
+  }
+  .stroke:nth-child(7){
+      animation-delay: 0s;
+  }
+  
+
+  .progress-bar-container {
+    margin-top: 3vw;
+    width: 100w;
+    height: 1rem;
+    /* background-color: black; */
+    border-radius: 10px;
+  }
+  
+  .progress-bar {
+    height: 100%;
+    width: 0%;
+    background-color: #A7141E;
+    border-radius: 10px;
+    transition: width 0.1s ease; 
+  }
+
+  .svg-container {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    padding-left: 90vw;
+    margin-top: -5rem;
+}
+
+.svg-link {
+    display: block; 
+    transition: transform 0.3s ease; 
+}
+
+.svg-link svg {
+  width: 10rem; 
+  height: 10rem; 
+}
+
+
+.svg-link:hover path{
+    transform: scale(1.1);
+    fill: #A7141E;
+}
